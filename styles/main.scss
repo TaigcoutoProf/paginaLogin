@@ -1,0 +1,8 @@
+/*BASE*/
+@import 'base/reset.scss' , 'base/colors.scss' , 'base/typography.scss';
+/*LAYOUTS*/
+@import 'layout/footer' , 'layout/header' ;
+/*PAGES*/
+@import 'pages/home';
+
+
