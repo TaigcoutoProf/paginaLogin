@@ -1,3 +1,29 @@
 /*Typography*/
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
+main{
+    section#ladoEscuro{
+        h2{
+            font-family: 'Orbitron',sans-serif;
+            font-weight: 400;
+        }
+    }
+    section#ladoForm{
+        h1{
+            font-family: 'Orbitron',sans-serif;
+            font-weight: 700;
+        }
+        form{
+            input{
+                font-family: 'Orbitron',sans-serif;
+            }
+        }
+        a{
+            font-family: 'Orbitron',sans-serif;
+        }
+        p{
+            font-family: 'Orbitron',sans-serif;
+
+        }
+    }
+}

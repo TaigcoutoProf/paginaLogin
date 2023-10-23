@@ -6,7 +6,66 @@ body {
   padding: 0;
 }
 
+main section#ladoEscuro {
+  background-color: #351C39;
+}
+main section#ladoEscuro h2 {
+  color: #B95A56;
+}
+main section#ladoForm {
+  background-color: #B95A56;
+}
+main section#ladoForm h1 {
+  color: #351C39;
+}
+main section#ladoForm form input {
+  background-color: #B95A56;
+  border-color: #351C39;
+}
+main section#ladoForm form input::placeholder {
+  color: #351C39;
+}
+main section#ladoForm form input:focus {
+  color: #351C39;
+}
+main section#ladoForm a {
+  color: #351C39;
+}
+main section#ladoForm p {
+  color: #351C39;
+}
+
+input::placeholder {
+  color: #222045;
+  opacity: 60%;
+  font-size: 15px;
+}
+
+input:focus {
+  padding-left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #222045;
+}
+
 /*Typography*/
+main section#ladoEscuro h2 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+}
+main section#ladoForm h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+}
+main section#ladoForm form input {
+  font-family: "Orbitron", sans-serif;
+}
+main section#ladoForm a {
+  font-family: "Orbitron", sans-serif;
+}
+main section#ladoForm p {
+  font-family: "Orbitron", sans-serif;
+}
+
 /*LAYOUTS*/
 /*PAGES*/
 

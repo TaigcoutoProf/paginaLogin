@@ -1,2 +1,48 @@
 $purple :#351C39;
 $orange:#B95A56;
+
+
+main{
+    section#ladoEscuro{
+        background-color: $purple;
+        h2{
+            color: $orange;
+        }
+    }
+    section#ladoForm{
+        background-color: $orange;
+        h1{
+            color: $purple;
+        }
+        form{
+            input{
+                background-color: $orange;
+                border-color: $purple;
+            }
+            input::placeholder{
+                color: $purple;
+            }
+            input:focus{
+                color: $purple;
+            }
+            
+        }
+        a{
+            color: $purple;
+        }
+        p{
+            color: $purple;
+        }
+    }
+}
+
+input::placeholder{
+    color: #222045;
+    opacity: 60%;
+    font-size: 15px;
+}
+input:focus {
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #222045;
+}
