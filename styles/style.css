@@ -27,8 +27,10 @@ main section#ladoForm form input::placeholder {
 }
 main section#ladoForm form input:focus {
   color: #351C39;
+  border-color: #351C39;
 }
-main section#ladoForm a {
+main section#ladoForm section#buttons a.button {
+  border-color: #351C39;
   color: #351C39;
 }
 main section#ladoForm p {
@@ -59,8 +61,9 @@ main section#ladoForm h1 {
 main section#ladoForm form input {
   font-family: "Orbitron", sans-serif;
 }
-main section#ladoForm a {
+main section#ladoForm a.button {
   font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
 }
 main section#ladoForm p {
   font-family: "Orbitron", sans-serif;
@@ -68,5 +71,128 @@ main section#ladoForm p {
 
 /*LAYOUTS*/
 /*PAGES*/
+html {
+  font-size: 14px;
+}
+
+body {
+  background-image: url(../img/background.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+body main section#ladoEscuro {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 400px;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 2.6rem 2.6rem 0 0;
+}
+body main section#ladoEscuro h2 {
+  text-align: center;
+}
+body main section#ladoEscuro img {
+  width: 10rem;
+}
+body main section#ladoForm {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  max-height: 400px;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 0 0 2.6rem 2.6rem;
+}
+body main section#ladoForm h1 {
+  align-self: center;
+  text-align: center;
+}
+body main section#ladoForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+}
+body main section#ladoForm form input {
+  border: none;
+  margin: 1rem 0;
+  border-bottom: 2px solid #351C39;
+  width: 100%;
+}
+body main section#ladoForm form input::placeholder {
+  margin: 0.3rem;
+}
+body main section#ladoForm form input:focus {
+  border: none;
+  border-bottom: 2px solid #351C39;
+  outline: 0;
+  box-shadow: none;
+}
+body main section#ladoForm section#buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+body main section#ladoForm section#buttons a.button {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 0.5em;
+  text-decoration: none;
+}
+body main section#ladoForm section#acessos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body main section#ladoForm section#acessos img {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+body main section#ladoForm p {
+  align-self: center;
+  text-align: center;
+}
+
+@media (min-width: 770px) {
+  html {
+    font-size: 18px;
+  }
+  body {
+    background-size: cover;
+    padding: 10%;
+  }
+  body main {
+    flex-direction: row;
+    width: 70%;
+  }
+  body main section#ladoEscuro {
+    border-radius: 2.6rem 0 0 2.6rem;
+  }
+  body main section#ladoEscuro img {
+    width: 15rem;
+  }
+  body main section#ladoForm {
+    border-radius: 0 2.6rem 2.6rem 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

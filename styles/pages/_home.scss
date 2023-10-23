@@ -1,0 +1,121 @@
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin tamanhoLados{
+    height: 100%;
+    max-height: 400px;
+    width: 50%;
+    max-width: 600px;
+}
+html{
+    font-size: 14px;
+}
+body{
+    background-image: url(../img/background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        section#ladoEscuro{
+            h2{
+                text-align: center;
+            }
+            padding: 2em;
+            @include flex-column();
+            @include tamanhoLados();
+            border-radius: 2.6rem 2.6rem 0 0;
+            img{
+                width: 10rem;
+                
+            }
+        }
+        section#ladoForm{
+            h1{
+                align-self: center;
+                text-align: center;
+            }
+            padding: 2em;
+            @include flex-column();
+            align-items: flex-start;
+            @include tamanhoLados();
+            border-radius: 0 0 2.6rem 2.6rem;
+            form{
+                @include flex-column();
+                width: 98%;
+                input{
+                    border: none;
+                    margin: 1rem 0;
+                    border-bottom: 2px solid #351C39;
+                    width: 100%;
+                }
+                input::placeholder{
+                    margin: 0.3rem;
+                }
+                input:focus{
+                    border: none;
+                    border-bottom: 2px solid #351C39;
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+            section#buttons{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                a.button{
+                    border: 1px solid;
+                    border-radius: 10px;
+                    padding: .5em;
+                    text-decoration: none;
+                }
+            }
+                section#acessos{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 2rem;
+                        margin: 0 .5rem;
+                    }
+                }
+            p{
+                align-self: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width:770px){
+    html{
+        font-size: 18px;
+    }
+    body{
+        background-size: cover;
+        padding: 10%;
+        main{
+            flex-direction: row;
+            width: 70%;
+            section#ladoEscuro{
+                border-radius: 2.6rem 0 0 2.6rem;
+                img{
+                    width: 15rem;
+                }
+            }
+            section#ladoForm{
+                border-radius: 0 2.6rem 2.6rem 0;
+            }
+        }
+        
+    }
+}

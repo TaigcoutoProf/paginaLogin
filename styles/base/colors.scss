@@ -24,11 +24,15 @@ main{
             }
             input:focus{
                 color: $purple;
+                border-color: $purple;
             }
             
         }
-        a{
-            color: $purple;
+        section#buttons{
+            a.button{
+                border-color: $purple;
+                color: $purple;
+            }
         }
         p{
             color: $purple;
